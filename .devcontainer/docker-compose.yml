@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+
+  workspace:
+    image: mcr.microsoft.com/devcontainers/base:ubuntu
+    command: sleep infinity
+
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: postgres
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: alumno@postgres.com
+      PGADMIN_DEFAULT_PASSWORD: 1234
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
