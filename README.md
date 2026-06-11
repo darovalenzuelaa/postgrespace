@@ -2,6 +2,8 @@
 
 Este laboratorio permite trabajar con PostgreSQL y pgAdmin directamente desde el navegador, sin necesidad de instalar software en el computador.
 
+**¿Primera vez aquí?** Consulta la [documentación técnica](#documentación-técnica) para entender cómo funciona este proyecto.
+
 ## Requisitos
 
 * Cuenta de GitHub.
@@ -28,6 +30,8 @@ Haz clic en **Fork** para crear una copia de este repositorio en tu cuenta de Gi
 
 La primera creación puede tardar algunos minutos mientras GitHub prepara el entorno.
 
+> **¿Qué es Codespaces?** — [Lee la documentación](docs/CODESPACES.md)
+
 ---
 
 ## 3. Abrir el Codespace
@@ -39,10 +43,11 @@ Cuando el entorno termine de iniciar, se recomienda seleccionar:
 - ![open-vscode](docs/images/open_vsc1.png)
 - ![open-vscode](docs/images/open_vsc2.png)
 
-
 Esta opción suele ser más estable que la versión web cuando la carga inicial del navegador presenta problemas.
 
 También puedes utilizar la versión web si prefieres trabajar completamente desde el navegador.
+
+> **¿Qué son Dev Containers?** — [Lee la documentación](docs/DEVCONTAINER.md)
 
 ---
 
@@ -65,7 +70,7 @@ Utiliza las siguientes credenciales:
 **Correo:**
 
 ```text
-alumno@postgres.com
+postgres@sql.dev
 ```
 
 **Contraseña:**
@@ -152,6 +157,21 @@ Si la configuración es correcta, aparecerá el servidor en el panel izquierdo d
 
 ## 8. Dale Like al repositorio si te ha sido útil para tu aprendizaje de PostgreSQL.
 
+---
+
+## Documentación técnica
+
+### Guías de uso
+- **[Cómo hacer Backups](docs/BACKUPS.md)** — Realizar respaldos, importaciones y exportaciones de tus bases de datos PostgreSQL.
+
+### Conceptos técnicos
+- **[GitHub Codespaces](docs/CODESPACES.md)** — ¿Qué es Codespaces y cómo funciona en este proyecto?
+- **[Dev Containers](docs/DEVCONTAINER.md)** — Qué son los contenedores de desarrollo y por qué los usamos.
+- **[Docker](docs/DOCKER.md)** — Entiende Docker, la tecnología base de este proyecto.
+- **[.gitkeep](docs/GITKEEP.md)** — Un archivo pequeño pero importante en tu repositorio.
+
+---
+
 ## Solución de problemas
 
 ### La página de pgAdmin no carga
@@ -183,12 +203,13 @@ ya que PostgreSQL se encuentra en un contenedor interno accesible mediante el no
 
 ---
 
+
 ## Credenciales del laboratorio
 
 ### pgAdmin
 
 ```text
-Correo: alumno@postgres.com
+Correo: postgres@sql.dev
 Contraseña: 1234
 ```
 

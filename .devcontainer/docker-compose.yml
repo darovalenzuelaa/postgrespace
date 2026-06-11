@@ -20,7 +20,9 @@ services:
     image: dpage/pgadmin4:latest
     restart: unless-stopped
     environment:
-      PGADMIN_DEFAULT_EMAIL: alumno@postgres.com
+      PGADMIN_DEFAULT_EMAIL: postgres@sql.dev
       PGADMIN_DEFAULT_PASSWORD: 1234
     ports:
       - "5050:80"
+    volumes:
+      - ../data:/data

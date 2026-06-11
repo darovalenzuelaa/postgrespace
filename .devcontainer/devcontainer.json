@@ -19,5 +19,14 @@
       "label": "pgAdmin",
       "onAutoForward": "openBrowser"
     }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.remote-containers",
+        "github.codespaces"
+      ]
+    }
   }
 }
