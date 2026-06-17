@@ -12,4 +12,11 @@ SELECT
     MIN(costo) AS mas_barata,
     MAX(costo) AS mas_cara
 FROM consultas_veterinarias;
+-- COUNT (*) AS  FROM   GROUP BY  ORDEN BY  ---> AGRUPA POR ESPECIE Y ORDENA DE MAYOR A MENOR 
+SELECT especie, COUNT(*) AS cantidad
+FROM mascotas
+GROUP BY especie
+ORDER BY cantidad DESC;
+
+
 
