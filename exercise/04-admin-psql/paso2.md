@@ -177,10 +177,10 @@ DELETE FROM tutores WHERE id_tutor = 1;
 | `REVOKE permiso ON tabla FROM usuario` | Quita un permiso |
 | `\du` | Lista usuarios y sus roles |
 
-> 📤 **Entrega:** guarda en `paso4.sql` los comandos `CREATE USER`, `GRANT` y `REVOKE`
-> que ejecutaste (los del profesor y el ejercicio). Adjunta `paso4.png` con la captura
+> 📤 **Entrega:** guarda en `paso2.sql` los comandos `CREATE USER`, `GRANT` y `REVOKE`
+> que ejecutaste (los del profesor y el ejercicio). Adjunta `paso2.png` con la captura
 > del `ERROR: permission denied` al intentar insertar como `recepcionista`.
 > Dónde ubicar los archivos: [Entrega](ENTREGA.md).
 
-➡️ **Siguiente:** en el [Ejercicio 5](paso5.md) harás un **backup real** — modificarás
+➡️ **Siguiente:** en el [Ejercicio 3](paso3.md) harás un **backup real** — modificarás
 datos, borrarás la base y la restaurarás desde el respaldo.

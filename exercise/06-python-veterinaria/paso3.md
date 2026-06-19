@@ -112,7 +112,7 @@ conn.close()
 Ejecuta el script completo:
 
 ```bash
-python3 entregas/apellido_nombre/05-python-veterinaria/paso3.py
+python3 entregas/apellido_nombre/06-python-veterinaria/paso3.py
 ```
 
 Resultado esperado:

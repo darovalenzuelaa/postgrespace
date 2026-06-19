@@ -72,7 +72,7 @@ mkdir -p entregas/apellido_nombre/04-procedimientos-psql
 Genera el backup directamente en tu carpeta de entrega:
 
 ```bash
-pg_dump -U postgres -d veterinariadb > entregas/apellido_nombre/04-procedimientos-psql/paso5_backup.sql
+pg_dump -U postgres -d veterinariadb > entregas/apellido_nombre/04-procedimientos-psql/paso3_backup.sql
 ```
 
 > 💡 **Local en Windows:** si `pg_dump` pide contraseña agrega `-W` al comando.
@@ -146,7 +146,7 @@ psql -U postgres -c "CREATE DATABASE veterinariadb;"
 **2. Restaura el backup:**
 
 ```bash
-psql -U postgres -d veterinariadb < entregas/apellido_nombre/04-procedimientos-psql/paso5_backup.sql
+psql -U postgres -d veterinariadb < entregas/apellido_nombre/04-procedimientos-psql/paso3_backup.sql
 ```
 
 Verás mensajes: `SET`, `CREATE TABLE`, `INSERT`... PostgreSQL está ejecutando tu
@@ -199,9 +199,9 @@ Debe dar **4, 8, 3, 9, 6, 15**. ✅ Todo está intacto.
 | `DROP DATABASE` + `CREATE DATABASE` | Ciclo completo de destrucción y recuperación |
 
 > 📤 **Entrega:**
-> - `paso5_backup.sql` → ya quedó en tu carpeta de entrega al hacer `pg_dump`
-> - `paso5.txt` → copia el output de terminal de los pasos 5.4 y 5.5
-> - `paso5.png` → captura del paso 5.6 mostrando `Firulais` restaurado y los conteos correctos
+> - `paso3_backup.sql` → ya quedó en tu carpeta de entrega al hacer `pg_dump`
+> - `paso3.txt` → copia el output de terminal de los pasos 5.4 y 5.5
+> - `paso3.png` → captura del paso 5.6 mostrando `Firulais` restaurado y los conteos correctos
 >
 > Dónde ubicar los archivos: [Entrega](ENTREGA.md).
 
@@ -209,4 +209,4 @@ Debe dar **4, 8, 3, 9, 6, 15**. ✅ Todo está intacto.
 
 > 🎓 **Has completado el Set 04.** Ahora sabes usar psql, crear funciones y
 > procedimientos, proteger datos con usuarios y permisos, y hacer backups reales.
-> En el [Set 05](../05-python-veterinaria/README.md) usarás todo esto desde Python.
+> En el [Set 06](../06-python-veterinaria/README.md) usarás todo esto desde Python.

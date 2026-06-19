@@ -1,4 +1,4 @@
-# Set 05 — Python conectado a PostgreSQL 🐍
+# Set 06 — Python conectado a PostgreSQL 🐍
 
 Has construido una base de datos funcional y aprendido a administrarla con psql.
 Ahora das el siguiente paso: **conectar un programa Python a la veterinaria** y
